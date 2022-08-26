@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="9a07aebd-6026-4837-b82e-65abb36e4763" ChangeDateTime="08/26/2022 11:01:30">
+    <Property Name="ElementName" Value="[dbo].[Set].[FigsNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Set]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FigsCount" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="901dcb81-374a-4a82-93da-8d0db597f854" ChangeDateTime="08/26/2022 11:01:33">
+    <Property Name="ElementName" Value="[dbo].[Set].[UniqeFigsNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Set]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UniqeFigsCount" />
+  </Operation>
+</Operations>
