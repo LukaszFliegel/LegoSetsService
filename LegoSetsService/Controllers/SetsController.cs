@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using LegoSetsService.DomainModels;
+using LegoSetsService.Services.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LegoSetsService.Controllers
@@ -7,15 +9,19 @@ namespace LegoSetsService.Controllers
     [ApiController]
     public class SetsController : ControllerBase
     {
-        public SetsController()
-        {
+        private readonly ISetsServices _setsServices;
 
+        public SetsController(ISetsServices setsServices)
+        {
+            _setsServices = setsServices;
         }
 
         [HttpPost]
-        public IEnumerable<WeatherForecast> TrackNewSet(string setNumber)
+        public async Task<IActionResult> TrackNewSet(string setNumber)
         {
-            
+            var addedSet = await _setsServices.TrackNewSet(setNumber);
+
+            return Ok(addedSet);
         }
     }
 }

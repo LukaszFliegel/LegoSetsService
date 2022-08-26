@@ -7,5 +7,5 @@
     [ReleaseDate] DATETIME NOT NULL, 
     [RetireDate] DATETIME NULL, 
     [FigsCount] INT NOT NULL, 
-    [[UniqeFigsCount]INT NOT NULL
+    [UniqeFigsCount]INT NOT NULL
 )
